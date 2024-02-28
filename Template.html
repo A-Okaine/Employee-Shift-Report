@@ -1,0 +1,401 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <style type="text/css" media="screen">
+    @import url(https://fonts.googleapis.com/css?family=Roboto);
+
+    /* Force Hotmail to display emails at full width */
+    .ExternalClass {
+      display: block !important;
+      width: 100%;
+    }
+
+    /* Force Hotmail to display normal line spacing */
+    .ExternalClass,
+    .ExternalClass p,
+    .ExternalClass span,
+    .ExternalClass font,
+    .ExternalClass td,
+    .ExternalClass div {
+      line-height: 100%;
+    }
+
+    body {
+      background-color: #ECF1FF;
+    }
+
+    body,
+    p,
+    ul,
+    ol,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: 'Roboto', Roboto, Arial, Helvetica, sans-serif !important;
+      font-size: 15px;
+      line-height: 22px;
+      color: #000860;
+      margin: 0;
+      padding: 0;
+      -webkit-text-size-adjust: none;
+      -ms-text-size-adjust: none;
+    }
+
+    h1 {
+      font-size: 24px;
+      font-weight: normal;
+      line-height: 24px;
+    }
+
+    h2 {
+      font-size: 22px;
+    }
+
+    h3 {
+      font-size: 20px;
+    }
+
+    h4 {
+      margin: 0 0 24px;
+      font-size: 18px;
+    }
+
+    h5 {
+      font-size: 16px;
+    }
+
+    h6 {
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    p {
+      margin-bottom: 20px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 20px 15px;
+    }
+
+    img {
+      line-height: 100%;
+      outline: none;
+      text-decoration: none;
+      -ms-interpolation-mode: bicubic;
+    }
+
+    a img {
+      border: none;
+    }
+
+    a,
+    a:link,
+    a:visited {
+      color: #000860;
+      font-family: 'Roboto', Roboto, Arial, Helvetica, sans-serif !important;
+    }
+
+    table td {
+      border-collapse: collapse;
+    }
+
+    .allTable {
+      width: 100%;
+    }
+
+    .upperTable {
+      width: 100%;
+      background: #ffffff;
+      text-align: center;
+    }
+
+    .contentTable {
+      width: 347px;
+      margin: 24px auto;
+    }
+
+    .contentTable td {
+      text-align: left;
+    }
+
+    .lowerTable {
+      width: 347px;
+      margin: 24px auto;
+    }
+
+    .footerTable {
+      width: 347px;
+      margin: 0 auto 24px;
+      padding: 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+    }
+
+    .centered {
+      text-align: center;
+      padding: 12px;
+    }
+
+    .button,
+    a.button {
+      width: 295px;
+      max-height: 48px;
+      border-radius: 27pt;
+      background-color: #FF2457;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      display: block;
+      margin: 0 20px;
+      padding: 10px;
+      color: #ffffff !important;
+    }
+
+    .button:active {
+      background-color: #cf1f48;
+    }
+
+    .buttonOutline,
+    a.buttonOutline {
+      width: 270px;
+      max-height: 48px;
+      border-radius: 27pt;
+      border: 2px solid #000860;
+      background-color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      text-align: center;
+      cursor: pointer;
+      display: block;
+      margin: 24px 0;
+      padding: 10px;
+      color: #000860;
+    }
+
+    .button:active {
+      background-color: #cf1f48;
+    }
+
+    .lightBorder {
+      border: 1px solid #b1bee2;
+    }
+
+    .buttonFootnote {
+      font-size: 12px;
+      line-height: 16px;
+    }
+
+    .contentImage {
+      width: 300px;
+      margin: 0 20px 40px;
+    }
+
+    .ticketStatus {
+      border-radius: 4px;
+      margin: auto;
+      width: 70%;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 11px;
+      line-height: 32px;
+      font-weight: bold;
+    }
+
+    .processing {
+      background-color: #fff3b9;
+    }
+
+    .canceled {
+      background-color: #ffdbe7;
+    }
+
+    .waiting {
+      background-color: #b8f0db;
+    }
+
+    .logincode {
+      border: 1px solid #c9d4ec;
+      border-radius: 4px;
+      background-color: #f6f8ff;
+      text-align: center;
+      font-size: 20px;
+      line-height: 48px;
+      font-weight: bold;
+    }
+
+    /* for "drawing results" used in "winning notification" and "second playslip" in "order confirmation" & "order cancellation"*/
+    .circle {
+      background-color: #c4d1f4;
+      color: #001960;
+      text-align: center;
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      font-weight: bold;
+      margin-right: 0px;
+      font-size: 12px;
+      line-height: 30px;
+    }
+
+    .circle-PowerBall {
+      background-color: #000000;
+      color: #f9fbff;
+    }
+
+    .circle-MegaMillions {
+      background-color: #234687;
+      color: #f9fbff
+    }
+
+    .addon {
+      font-size: 10px;
+      text-align: left;
+      line-height: 15px;
+    }
+
+    .addon-multiple span {
+      text-align: left;
+      font-weight: normal;
+    }
+
+    .subscription {
+      font-size: 11px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: #ffffff;
+      background-color: #000860;
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    /* lottery specific colors used for lottery names */
+    .PowerBall {
+      color: #000000;
+    }
+
+    .MegaMillions {
+      color: #234687;
+    }
+
+    .Pick3 {
+      color: #02BB5D;
+    }
+
+    .Pick4 {
+      color: #FF0000;
+    }
+
+    .Pick6 {
+      color: #005DFF;
+    }
+
+    .Cash5 {
+      color: #8F14EE;
+    }
+
+    .ColoradoLotto {
+      color: #01A5DB;
+    }
+
+    .ColoradoCash5 {
+      color: #8BB331;
+    }
+
+    .text-green {
+      color: #02BB5D;
+    }
+  </style>
+</head>
+
+<body {{attributes}} style="width: 100%!important; margin: 0; padding: 0;">
+  <div
+    style="margin:0;padding:0;font-family:'Roboto',Roboto,Arial,Helvetica,sans-serif!important;font-size:15px;color:#000860;line-height:22px;margin-bottom:0;background:#ecf1ff;">
+    <span style="width:0;opacity:0;max-height:0;overflow:hidden;float:left;display:none!important"></span>
+    <table style="width:100%">
+      <tbody>
+        <tr>
+          <td
+            style="font-family:'Roboto',Roboto,Arial,Helvetica,sans-serif!important;font-size:15px;color:#000860;line-height:22px;border-collapse:collapse">
+            <table style="text-align:center;width:100%;background:#ffffff">
+              <tr>
+                <td style="border-collapse:collapse;">
+                  <table style="margin:0 auto;width:327px">
+                    <tr>
+                      <td style="border-collapse:collapse;">
+                        <img src="https://ci4.googleusercontent.com/proxy/bRHU3VJTWlFkNW2CekNLFx8CeKIkFKSyj3I_Iz9SqZWnQ9cR6ZitV-D92J2lfUiq7Ux40Y-fN-p0yx712fnN-S8TFdfOixq9lW_3nPx9wBLI5_kIooKPPjkBFp0B4g=s0-d-e1-ft#https://d1pgqke3goo8l6.cloudfront.net/JAonbqCsQC6BdymqC9WH_1)%20Default.png"
+                                             style="line-height:100%;outline:none;text-decoration:none;margin:40px 0 0 0;width:208px"
+                                             width="208" class="CToWUd">
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+              <tr>
+                <td style="border-collapse:collapse;">
+                  <table style="width:343px;margin:20px auto">
+                    <tr>
+                      <td
+                        style="font-family:'Roboto',Roboto,Arial,Helvetica,sans-serif!important;font-size:15px;color:#000860;line-height:22px;border-collapse:collapse;text-align:left">
+                        {{Content}}
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td style="border-collapse:collapse">
+            <table style="width:327px; margin: 0 auto; padding: 20px 0;">
+              <tr>
+                <td style="border-collapse:collapse;">
+                  <table style="margin: auto;">
+                    <tr>
+                      <td style="border-collapse:collapse;">
+                        <p
+                          style="text-align: center; font-family:'Roboto', Roboto, Arial, Helvetica, sans-serif !important; line-height:22px; color:#000860; padding:0; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; margin-bottom:20px; font-size:13px; margin:0 auto">
+                          <a href="https://nj.lotto.com/privacy-policy"
+                            style="text-decoration:none; margin: 0 8px; color:#000860;">Privacy Policy</a> <a
+                            href="https://nj.lotto.com/terms-and-conditions"
+                            style="text-decoration:none; margin: 0 8px; color:#000860;">Terms of Service</a> <a
+                            href="mailto:lawrence.a@lotto.com?subject=Shift Report: I Found a Bug!&body=Hi Lawrence,%0D%0A I'd like to let you know I found a bug while viewing the terminal report.%0D%0A%0D%0ADescription of Bug:%0D%0A%0D%0A Thank You!"
+                            style="text-decoration:none; margin: 0 8px; color:#000860;">Report a Bug</a></p>
+                      </td>
+                    </tr>
+                  </table>
+                  <table>
+                    <tr>
+                      <td style="border-collapse:collapse;">
+                        <p
+                          style="margin-left:30px; margin-bottom:20px; padding:0; text-align: center; font-size:12px; line-height:22px; font-family:'Roboto', Roboto, Arial, Helvetica, sans-serif !important; -webkit-text-size-adjust:none; -ms-text-size-adjust:none; color:#000860;">
+                          <span style="font-weight:bold;"><a style="text-decoration: none; color:#000860;" href="https://nj.lotto.com">Lotto.com Inc.</a> &copy; 2021</span><br>
+                          111 Town Square Place, Jersey City, NJ 07310
+                        </p>
+                      </td>
+                    </tr>
+                  </table>
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <img src="https://ci3.googleusercontent.com/proxy/ghgpot7YoRrDW_mP0fB6kFiRZ2yBMdRhcZqrYGlC0fnqulVSKbXmKgA1FEm35Z4_PLj-WZG5iYOdMfN-krVGtupGYz_Iy0v8FRBTsKd-W13tu3rfZYYJTpcGlKyKCUYDg2lqUWOc32KnzYuEz61B3llD54gwN78J9-i3d49V31fD7CsHCAfISDYoJIo7xwENkw-fozjsc0gflbv4kmDFKTeR-8ocu7FYUs1U0Rk2KM2HsSH8DdmOSBVvw2pD25Zy5yHRFTd88ZZoEOLg9s6ETiFUSqkXp0XSYcjEiPB-5vCOe-kHdOnWYpUdmwWitzHm0cffYsW8g-zgb6AXpyWdPbX_97Xg1Bz1gezCt8RwlX0wzSKFmWcPMjGI2EvALnTJ1JOHQ_M3N37TnHIyms70UP92iNsuvsns5yLduLWbucMHDmpN9f910Rhu1x3nywMbY30DUbRDo3nOFfLGv_eIpiqdhsLNwGIcB446xDKSCkkHkjOAR-ZK3Ctvhqnk-s5MI364VgJIOaZadCWVDc3z48Fr4w4EUlLvLI9JTqoBAQ47b84YPzJ23pxEzQ9-zks-I1XM8lOZtnr-EHZtmkKzaBA08eudnW2s684QuHwR4Lkg4njL1yWCE1gz_6Ks4Q6nmAxChUFM4g2IGSKr8bB08p0eJsu_G08vOElRo-2bMVsFp8MHeroDh392_DIxEKhw2jR8QnElbiY6Nxxj34i8v95ZxJGfLXaHfKhW8Y33z14ieU1fb5YaRaw=s0-d-e1-ft#http://url5341.lotto.com/wf/open?upn=KY9rw7eNJOjNmAw-2Bjd0Yh-2BMlnlZb4cr3RL8WfHtOAnebWDx236J0MedxsaQPtmDQr4yOVZE-2BpKKGMUQ19Q-2FeywrmQS2-2BPZ9zpI0kBzaP-2B6FwxeO5bbldmmcs9-2Fjh-2B7sgFhlt1YwwLC4S6ZowjTL47m6Kbk9Vp3kVCMwHU9lrFDxdseA-2BNrgDzg-2FuKyWw-2FruoxZhOi4n1y0DyIH02VPoTVr6uY-2B0nAgf-2BSVzHB4kdw4pPbaaSNYnXC9LqDdJwfigqZc6YfqxAch4hrrmyNRwvIutodTJOVhIPBUuZgSd0gkXl1s3eViCWVXq62BuN9H-2FeCxbNTOznExaJ5ukE7j0US7K7mfGrrgFRQVTajJ3JeIBs2ljSYjvD1MGCipH4fxYtMEelh0mKPf83pFr84HuR-2BbtA-2B2aN3lcrFzWZv9G5GsZ-2BX10AS8hRP-2BjusJrzs2ngo14RYvvZXmfvAZEhXIhr8w-3D-3D"
+         alt="" width="1" height="1"
+         style="height:1px!important;width:1px!important;border-width:0!important;margin-top:0!important;margin-bottom:0!important;margin-right:0!important;margin-left:0!important;padding-top:0!important;padding-bottom:0!important;padding-right:0!important;padding-left:0!important"
+         class="CToWUd">
+  </div>
+</body>
+
+</html>
